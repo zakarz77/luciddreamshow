@@ -134,10 +134,7 @@ h1, h2, p { margin: 0; }
   position: absolute;
   z-index: -1;
   pointer-events: none;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: min(100vw, 1300px);
+  inset: 0;
   background: url('/background2.png') center bottom / cover no-repeat;
   opacity: .8;
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 55%);
@@ -276,7 +273,9 @@ h1, h2, p { margin: 0; }
   }
   .artist-grid { grid-template-columns: repeat(2, 1fr); }
   .lower::after {
+    top: auto;
     left: -15%;
+    right: auto;
     width: 130%;
     height: 130vw;
   }
