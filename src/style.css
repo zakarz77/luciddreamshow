@@ -151,12 +151,16 @@ h1, h2, p { margin: 0; }
 }
 .lower::after {
   bottom: 0;
-  left: 50%;
-  width: max(100%, 1300px);
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
+  height: min(100vw, 1300px);
+  aspect-ratio: 1;
+  background-image: url('/background2.png');
+  background-position: center bottom;
+  background-size: 100% auto;
   opacity: .7;
-  -webkit-mask-image: linear-gradient(180deg, transparent 82%, #000 92%);
-  mask-image: linear-gradient(180deg, transparent 82%, #000 92%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 45%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 45%);
 }
 
 .artists, .about, .tickets {
@@ -290,7 +294,21 @@ h1, h2, p { margin: 0; }
     background: linear-gradient(180deg, rgba(10, 4, 22, .3) 0, rgba(10, 4, 22, .1) 35%, rgba(11, 4, 21, .6) 62%, var(--bg) 92%);
   }
   .artist-grid { grid-template-columns: repeat(2, 1fr); }
-  .lower::before { display: none; }
+  .lower::before {
+    display: block;
+    top: 0;
+    right: -80%;
+    opacity: .45;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 78%, transparent 100%), radial-gradient(ellipse 80% 70% at 50% 50%, #000 30%, transparent 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 78%, transparent 100%), radial-gradient(ellipse 80% 70% at 50% 50%, #000 30%, transparent 100%);
+  }
+  .lower::after {
+    left: -15%;
+    width: 130%;
+    height: 130vw;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
+  }
   .about p { max-width: none; font-size: 15px; }
   .ticket-bar { padding: 24px 20px; flex-direction: column; text-align: center; }
   .pill-button { width: min(100%, 280px); height: 54px; font-size: 17px; padding: 0 26px; }
