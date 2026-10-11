@@ -70,6 +70,7 @@ function App() {
       </header>
 
       <section className="hero" id="home">
+        <video className="hero-video" src="./bg1.mp4" poster="./bg1.jpg" autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
         <h1 className="visually-hidden">Welcome to the Lucid Dream Show</h1>
         <div className="hero-content">
           <button className="pill-button" onClick={() => scrollTo('tickets')}>
@@ -83,6 +84,7 @@ function App() {
       </section>
 
       <div className="lower">
+        <video className="lower-video" src="./bg2.mp4" poster="./bg2.jpg" autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
         <section className="artists" id="artists">
           <h2 className="neon-title">Артисты</h2>
           <div className="artist-grid">
