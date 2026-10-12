@@ -112,16 +112,23 @@ h1, h2, p { margin: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #ffd6f4;
+  border: 2px solid #88fff3;
   border-radius: 999px;
   background: rgba(20, 8, 38, .55);
+  color: #88fff3;
   font-size: clamp(16px, 2.1vw, 26px);
   font-weight: 600;
   letter-spacing: .02em;
-  box-shadow: 0 0 10px rgba(255, 140, 225, .75), inset 0 0 10px rgba(255, 140, 225, .45);
+  box-shadow: 0 0 10px rgba(136, 255, 243, .75), inset 0 0 10px rgba(136, 255, 243, .35);
   transition: box-shadow .2s;
 }
-.pill-button:hover { box-shadow: 0 0 22px #ff7ddd, inset 0 0 16px rgba(255, 140, 225, .7); }
+.pill-button:hover { box-shadow: 0 0 22px #88fff3, inset 0 0 16px rgba(136, 255, 243, .6); }
+.ticket-button {
+  background: #62b3ab;
+  color: #0b0415;
+  box-shadow: 0 0 12px rgba(98, 179, 171, .65), inset 0 0 10px rgba(255, 255, 255, .22);
+}
+.ticket-button:hover { box-shadow: 0 0 22px rgba(98, 179, 171, .9), inset 0 0 16px rgba(255, 255, 255, .35); }
 .arrow { width: clamp(22px, 3.5vw, 40px); height: auto; }
 
 .event-details {

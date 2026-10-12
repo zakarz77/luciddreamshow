@@ -110,7 +110,7 @@ function App() {
         <section className="tickets" id="tickets">
           <div className="ticket-bar">
             <h2 className="neon-title">Купить билет</h2>
-            <button className="pill-button">
+            <button className="pill-button ticket-button">
               Купить билет <ArrowIcon />
             </button>
           </div>
