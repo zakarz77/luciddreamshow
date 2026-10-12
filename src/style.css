@@ -257,9 +257,9 @@ h1, h2, p { margin: 0; }
 }
 .ticket-bar .neon-title {
   color: #62b3ab;
-  -webkit-text-stroke: 1px #88fff3;
+  -webkit-text-stroke: 2px #88fff3;
   paint-order: stroke fill;
-  text-shadow: 0 0 4px #88fff3, 0 0 12px rgba(98, 179, 171, .8), 0 0 24px rgba(98, 179, 171, .55);
+  text-shadow: 0 0 2px #88fff3, 0 0 8px rgba(98, 179, 171, .75), 0 0 18px rgba(98, 179, 171, .5);
 }
 
 /* Tablet */
