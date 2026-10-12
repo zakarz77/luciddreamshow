@@ -124,11 +124,11 @@ h1, h2, p { margin: 0; }
 }
 .pill-button:hover { box-shadow: 0 0 22px #88fff3, inset 0 0 16px rgba(136, 255, 243, .6); }
 .ticket-button {
-  background: #62b3ab;
-  color: #0b0415;
-  box-shadow: 0 0 12px rgba(98, 179, 171, .65), inset 0 0 10px rgba(255, 255, 255, .22);
+  background: rgba(20, 8, 38, .35);
+  color: #88fff3;
+  box-shadow: 0 0 10px rgba(136, 255, 243, .55), inset 0 0 10px rgba(136, 255, 243, .25);
 }
-.ticket-button:hover { box-shadow: 0 0 22px rgba(98, 179, 171, .9), inset 0 0 16px rgba(255, 255, 255, .35); }
+.ticket-button:hover { box-shadow: 0 0 22px rgba(136, 255, 243, .9), inset 0 0 16px rgba(136, 255, 243, .45); }
 .arrow { width: clamp(22px, 3.5vw, 40px); height: auto; }
 
 .event-details {
@@ -250,10 +250,15 @@ h1, h2, p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  border: 1px solid rgba(255, 210, 243, .6);
+  border: 1px solid #88fff3;
   border-radius: clamp(8px, 1.2vw, 16px);
   background: rgba(14, 5, 30, .55);
-  box-shadow: 0 0 10px rgba(255, 140, 225, .3);
+  box-shadow: 0 0 10px rgba(136, 255, 243, .35);
+}
+.ticket-bar .neon-title {
+  color: #62b3ab;
+  -webkit-text-stroke: 1px #88fff3;
+  text-shadow: 0 0 4px #88fff3, 0 0 12px rgba(98, 179, 171, .9), 0 0 24px rgba(98, 179, 171, .65);
 }
 
 /* Tablet */
