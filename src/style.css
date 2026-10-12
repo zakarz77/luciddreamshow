@@ -257,7 +257,6 @@ h1, h2, p { margin: 0; }
 }
 .ticket-bar .neon-title {
   color: #62b3ab;
-  -webkit-text-stroke: 1px #88fff3;
   text-shadow: 0 0 4px #88fff3, 0 0 12px rgba(98, 179, 171, .9), 0 0 24px rgba(98, 179, 171, .65);
 }
 
