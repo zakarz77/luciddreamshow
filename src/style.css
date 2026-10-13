@@ -181,6 +181,13 @@ h1, h2, p { margin: 0; }
   color: #ffd3f5;
   text-shadow: 0 0 4px #ff9be6, 0 0 12px #ff5fd2, 0 0 24px #e03bb8;
 }
+.artists > .neon-title,
+.about > .neon-title {
+  color: #62b3ab;
+  -webkit-text-stroke: 1px #88fff3;
+  paint-order: stroke fill;
+  text-shadow: 0 0 2px #88fff3, 0 0 8px rgba(98, 179, 171, .75), 0 0 18px rgba(98, 179, 171, .5);
+}
 
 /* Artists */
 .artist-grid {
@@ -191,10 +198,10 @@ h1, h2, p { margin: 0; }
 }
 .artist-card {
   aspect-ratio: 1;
-  border: 1px solid rgba(255, 190, 238, .75);
+  border: 1px solid rgba(136, 255, 243, .75);
   border-radius: clamp(10px, 1.5vw, 20px);
   background: rgba(14, 5, 32, .5);
-  box-shadow: 0 0 8px rgba(255, 140, 225, .5), inset 0 0 12px rgba(255, 140, 225, .22);
+  box-shadow: 0 0 8px rgba(136, 255, 243, .5), inset 0 0 12px rgba(136, 255, 243, .22);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -209,14 +216,14 @@ h1, h2, p { margin: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, transparent 35%, rgba(255, 200, 245, .35) 50%, transparent 65%);
+  background: linear-gradient(115deg, transparent 35%, rgba(136, 255, 243, .35) 50%, transparent 65%);
   transform: translateX(-120%);
 }
 .artist-card:hover {
   animation-play-state: running, paused;
   transform: translateY(-10px) scale(1.04);
   border-color: #fff;
-  box-shadow: 0 0 14px rgba(255, 140, 225, .9), 0 0 38px rgba(255, 95, 210, .55), inset 0 0 20px rgba(255, 140, 225, .4);
+  box-shadow: 0 0 14px rgba(136, 255, 243, .9), 0 0 38px rgba(98, 179, 171, .55), inset 0 0 20px rgba(136, 255, 243, .4);
 }
 .artist-card:hover::after { transform: translateX(120%); transition: transform .8s ease; }
 
